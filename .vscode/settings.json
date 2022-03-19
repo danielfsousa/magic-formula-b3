@@ -1,0 +1,6 @@
+{
+  "python.autoComplete.extraPaths": ["__pypackages__/3.10/lib"],
+  "python.analysis.extraPaths": ["__pypackages__/3.10/lib"],
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.diagnosticSeverityOverrides": {}
+}

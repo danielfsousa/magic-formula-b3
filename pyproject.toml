@@ -1,0 +1,33 @@
+[project]
+name = "magic-formula"
+version = "1.0.0"
+description = "A CLI to scrape and calculate Joel Greenblatt's magic formula from Brazil's stock market (B3)"
+authors = [
+    {name = "Daniel Sousa", email = "sousa.dfs@gmail.com"},
+]
+dependencies = [
+    "beautifulsoup4>=4.10.0",
+    "requests>=2.27.1",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.urls]
+homepage = "https://github.com/danielfsousa/magic-formula"
+
+[project.optional-dependencies]
+[tool]
+[tool.pdm]
+
+[tool.pdm.scripts]
+cli = {call = "src.main:main"}
+
+[tool.pdm.dev-dependencies]
+types = [
+    "types-beautifulsoup4>=4.10.10",
+    "types-requests>=2.27.4",
+]
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"

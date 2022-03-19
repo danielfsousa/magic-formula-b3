@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "debug",
+      "type": "python",
+      "request": "launch",
+      "module": "src.main",
+      "console": "integratedTerminal"
+    }
+  ]
+}
